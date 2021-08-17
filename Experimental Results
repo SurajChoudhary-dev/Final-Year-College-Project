@@ -1,0 +1,16 @@
+The program being executed on a machine shows the following result, we can
+clearly see that this method is fast and quite secure .Implementing this we can
+achieve this result. The time taken for the word "CRYPTOGRAPHY" is 0.11
+sec and the same thing was run on Network which resulted in 0.06 sec.
+
+
+Test 1:
+Input:-   network
+
+Output:-   
+LEVEL 1 ENCRYPTION:    EFGLSYL
+LEVEL 2 ENCRYPTION:    GAGG GAGC GAGT GATA GGAT GGCG GATA
+LEVEL 2 ENCRYPTION:    EFGLSYL
+LEVEL 1 ENCRYPTION:    NETWORK
+
+
