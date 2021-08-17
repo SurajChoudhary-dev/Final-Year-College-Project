@@ -5,12 +5,21 @@ sec and the same thing was run on Network which resulted in 0.06 sec.
 
 
 Test 1:
-Input:-   network
+Input:-   CRYPTOGRAPHY
 
 Output:-   
-LEVEL 1 ENCRYPTION:    EFGLSYL
-LEVEL 2 ENCRYPTION:    GAGG GAGC GAGT GATA GGAT GGCG GATA
-LEVEL 2 ENCRYPTION:    EFGLSYL
-LEVEL 1 ENCRYPTION:    NETWORK
+Level 1 Encryption is: CCZXUZPLHKTM
+Level 2 Encryption is: GAAT GAAT GGCC GGCA GGGG GGCC GGAA GATA GACA GACT GGGA GATG 
+Level 2 Decryption is: CCZXUZPLHKTM
+Level 2 Decryption is: CRYPTOGRAPHY
+
+
+Test 2:
+Input:-surajchoudhary
+Output:-
+Level 1 Encryption is: EXENQOXVXYLEAH
+Level 2 Encryption is: GAGG GGCA GAGG GATC GGAG GATT GGCA GGGC GGCA GGCG GATA GAGG GAAG GACA 
+Level 2 Decryption is: EXENQOXVXYLEAH
+Level 2 Decryption is: SURAJCHOUDHARY
 
 
