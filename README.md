@@ -2,13 +2,6 @@
 A Novel Two Layer Encryption Algorithm Using One-Time Pad and DNA Cryptography
 
 
-This project deals with the development of a secure genetic 
-algorithmic system to transfer data that is of extreme importance of 
-the internet in a very secure way. The idea is two implement two 
-levels of encryption that too with a very random making it secure 
-and allowing more and more and people to have a believer in online 
-transaction, Genetic Algorithm is a powerful tool that has makes the 
-process lot more secure, The randomness of the algorithm make it 
-hard to crack it. Therefore, creating a more community where people 
-trust in the sharing the most confidential details online through these 
-secure means.
+This project deals with the development of a secure genetic algorithmic system to transfer data that is of extreme importance of the internet in a very secure way. The idea is two implement two levels of encryption that too with a very random making it secure and allowing more and more and people to have a believer in online transaction, Genetic Algorithm is a powerful tool that has makes the process lot more secure, The randomness of the algorithm make it hard to crack it. Therefore, creating a more community where people trust in the sharing the most confidential details online through these secure means.
+
+The need of encryption cannot be underestimated in today’s time. From a travel ticket to a movie ticket, almost everything of need is easily available. This comes with the cost of sharing important information, which if gets into wrong hand, will cause havoc. The aim of this work is to secure the data by fusing the extracts of one-time pad (OTP) and DNA cryptography. In the first level, a symmetric-key algorithm of OTP has been used to make the text secure which is a very random technique. In the next level, conventional DNA cryptographic techniques with few variations have been used. The target of implementation would be the storing and passing of vital information of customers like the debit/credit card details including the CVV code or the virtual passcode. Using DNA cryptography, large amount of storage can be made in the server with an efficient speed and power.
