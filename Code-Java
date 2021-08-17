@@ -1,0 +1,128 @@
+import java.io.*;
+import java.util.*;
+class GFG {
+ static int otp[];
+ static int i;
+ static int l;
+ static int a[];
+ static int out[];
+ static String enc1="";
+ static String dec1="";
+ static String binary="";
+ static String enc2="";
+ static String dec2="";
+ public static void getRandomNumberInRange(int l) {
+ int max=25;
+ int min=0;
+Random r = new Random();
+otp=new int[l];
+for(i=0;i<l;i++)
+{
+ otp[i]=r.nextInt((max - min) + 1) + min;
+ 
+}
+}
+public static void encrypt1(String s)
+{
+ s=s.toUpperCase();
+l=s.length();
+a=new int[l];
+for(i=0;i<l;i++)
+{
+ a[i]=s.charAt(i)-65;
+}
+getRandomNumberInRange(l);
+out=new int[l];
+for(i=0;i<l;i++)
+{ out[i]=a[i]+otp[i];
+ out[i]=out[i]%26;
+ enc1=enc1+(char)(out[i]+65);
+}
+}
+public static void decrypt1()
+{
+ l=enc1.length();
+ int c;
+ for(i=0;i<l;i++)
+ {
+ c=(int)enc1.charAt(i);
+ c=c-otp[i];
+ if(c<65)
+ c=c+26;
+ dec1=dec1+(char)c;
+ 
+ }
+ 
+}
+public static void encrypt2(String s)
+{
+ char c;
+ int charc,j;
+ String k="",encode="";
+ for(i=0;i<l;i++)
+ {
+ c=s.charAt(i);
+ charc=c;
+ binary=Integer.toBinaryString(charc);
+ if(binary.length()==7)
+ binary="0"+binary;
+ encode="";
+ for(j=0;j<binary.length();j=j+2)
+ {
+ k=binary.substring(j,j+2);
+ if(k.equals("00"))
+ encode=encode+"A";
+ else if(k.equals("01"))
+ encode=encode+"G";
+ else if(k.equals("10"))
+ encode=encode+"C";
+ else if(k.equals("11"))
+ encode=encode+"T"; }
+ enc2=enc2+encode+" ";
+ }
+ 
+}
+public static void decrypt2()
+{
+ char c;
+ int lenofenc2;
+ lenofenc2=enc2.length();
+ String k="";
+ for(i=0;i<lenofenc2;i++)
+ {
+ c=enc2.charAt(i);
+ if(c!=' ')
+ {
+ if(c=='A')
+ k=k+"00";
+ else if(c=='G')
+ k=k+"01";
+ else if(c=='C')
+ k=k+"10";
+ else if(c=='T')
+ k=k+"11";
+ }
+ else
+ {
+ int alpha = Integer.parseInt(k, 2);
+ dec2=dec2+(char)alpha;
+ k="";
+ 
+ }
+ 
+ }
+}
+public static void main (String[] args) {
+ Scanner sc=new Scanner(System.in);
+ String s=sc.next();
+ encrypt1(s);
+ encrypt2(enc1);
+ decrypt2();
+ decrypt1();System.out.println(“INPUT: ”+enc1);
+System.out.println(“Level 1 Encryption:”+enc1);
+System.out.println(“Level 2 Encryption:”+enc2);
+System.out.println(“Level 2 Decryption:”+dec2);
+System.out.println(“Level 1 Decryption:”+dec1);
+ 
+}
+}
