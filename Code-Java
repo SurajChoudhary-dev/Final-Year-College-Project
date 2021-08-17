@@ -118,11 +118,15 @@ public static void main (String[] args) {
  encrypt1(s);
  encrypt2(enc1);
  decrypt2();
- decrypt1();System.out.println(“INPUT: ”+enc1);
-System.out.println(“Level 1 Encryption:”+enc1);
-System.out.println(“Level 2 Encryption:”+enc2);
-System.out.println(“Level 2 Decryption:”+dec2);
-System.out.println(“Level 1 Decryption:”+dec1);
+ decrypt1();
+ System.out.print("Level 1 Encryption is:"+ " ");
+System.out.println(enc1);
+System.out.print("Level 2 Encryption is:"+ " ");
+System.out.println(enc2);
+System.out.print("Level 2 Decryption is:"+ " ");
+System.out.println(dec2);
+System.out.print("Level 2 Decryption is:"+ " ");
+System.out.println(dec1);
  
 }
 }
