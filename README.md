@@ -16,6 +16,7 @@ storing and transmitting data in a particular form so that only those
 for whom it is intended can read and process it. Cryptography not 
 only protects data from theft or alteration, but can also be used for 
 user authentication.
+
 DNA Cryptography can be defined as a hiding data in terms of 
 DNA Sequence. Cryptographic technique in which each letter of the 
 alphabet is converted into a different combination of the four bases 
@@ -32,10 +33,12 @@ secret key can be divided into two parts, a public key and a private
 key. The public key can be given to anyone, trusted or not, while the 
 private key must be kept secret (just like the key in symmetric 
 cryptography).
+
 • Problem Definition
 This problem focuses on developing an algorithm that can provide 
 secure means to transfer sensitive data such as payment details using 
 DNA Cryptography.
+
 • Objective of the Project
 The need of Encryption is almost cannot be underestimated in 
 todays time. The Technology has advanced to a great extent and has 
@@ -53,6 +56,7 @@ and foreign governments. Many of the hacks that make the news can
 be attributed to weak or — even worse — non-existent encryption.
 Therefore, it can be concluded that the Encryption is the need of 
 hour.
+
 This project we make a secure algorithm for Encryption using a two 
 level security, in the first level we use symmetric key algorithm.
 One Time Pad is used to make the text secure, this is a very random 
@@ -66,12 +70,14 @@ are capable of arranging themselves in different manner. Since we
 know that every person has different DNA therefore the four 
 chemical bases are capable of arranging themselves in many 
 different ways.
+
 Hence this project is an effort in exploring the complexities of DNA 
 Cryptography and Implementing it to provide a secure algorithm 
 that can be applied to the sensitive data been transferred over the 
 network in a two layered secure manner that can further strengthen 
 the security and exploring interesting domains of this interesting
 topic of DNA Cryptography.
+
 • Tools and Platforms
 • Developer-end requirements
 ANY PROGRAMMING LANGUAGE OF CHOICE
@@ -86,6 +92,7 @@ Enterprise Applications, J2ME for Mobile Applications. The
 new J2 versions were renamed as Java SE, Java EE, and Java 
 ME respectively. Java is guaranteed to be Write Once, Run 
 Anywhere.
+
 Java is − Object Oriented − In Java, everything is an Object. 
 Java can be easily extended since it is based on the Object 
 model.
@@ -94,6 +101,7 @@ model.
 with at least 4GB RAM to train the classifier efficiently. The 
 classifier training phase complexity is dependent upon the 
 size of the text.
+
 • Project Organisation
 This project is organised in the following way: Chapter 2 deals with 
 the state of the art. Chapter 3 discusses the concepts and the problem 
@@ -101,14 +109,18 @@ in details. Chapter 4 contains the sample codes. Chapter 5 deals with
 the experimental results and the comparison with other methods. 
 Finally, chapter 6 concludes the project and discusses the future 
 scope of development.
+
+
 Chapter 2
 Literature Survey
 • Cryptography also allows senders and receivers to authenticate each other 
 through the use of key pairs. There are various types of algorithms for 
 encryption, some common algorithms include:
+
 • Secret Key Cryptography (SKC): Here only one key is used for both 
 encryption and decryption. This type of encryption is also referred to as 
 symmetric encryption.
+
 • Public Key Cryptography (PKC): Here two keys are used. This type of 
 encryption is also called asymmetric encryption. One key is the public key 
 that anyone can access. The other key is the private key, and only the 
@@ -117,6 +129,7 @@ receiver’s public key. The receiver decrypts the message using his/her
 private key. For nonrepudiation, the sender encrypts plain text using a 
 private key, while the receiver uses the sender’s public key to decrypt it. 
 Thus, the receiver knows who sent it.
+
 • DNA Cryptography Most of the cryptographic algorithms involve a large
 memory and computations like, One Time Pad in which there are nonrepeating very large text pads, this technique will be very useful. A gram of 
 DNA contains 1021 DNA bases and can store 108 terabytes of memory. 
@@ -133,9 +146,11 @@ are capable of intense processing. DNA chains have large scale of
 parallelism and its computing speed could reach up to 1 billion times per 
 second computations . DNA based computers also have very less power 
 consumption, which is equal to one – billionth of a traditional computer 
+
 .The vast parallelism and extraordinary information density inherent in 
 DNA molecules are explored for cryptographic purposes such as 
 encryption, authentication, signature, and so on.
+
 • Symmetric key cryptography is any cryptographic algorithm that is 
 based on a shared key that is used to encrypt or decrypt text/cyphertext, in
 contract to asymmetric key cryptography, where the encryption and 
@@ -154,11 +169,14 @@ the key with the help of a private link. This introduces drawbacks to
 symmetric algorithms, when compared to public-key encryption (also 
 known as asymmetric key encryption) .Symmetric key ciphers can be of 
 two types:
+
 • Stream ciphers encrypt all the bytes of a plaintext message at a time.
+
 • Block ciphers encrypt a number of bytes of the plaintext message at a
 time. Padding (increasing or decreasing the number of redundant 
 characters) is done to make the total length of the message a multiple of 
 the length of one block of message.
+
 
 • Asymmetrical Encryption is also known as public key cryptography,
 which is a relatively new method, compared to symmetric encryption. 
@@ -185,10 +203,13 @@ information that identifies a user and a server. It contains information
 such as an organization’s name, the organization that issued the
 certificate, the users’ email address and country, and users public key.
 
+
 Chapter 3
 Concepts and Problem Analysis
 • Two Level Encryption Method
 • One Time Pad
+
+
  BACKGROUND
 The term "one-time pad" refers to any method of encryption where 
 each byte of the plaintext is encrypted using one byte of the key 
@@ -220,7 +241,10 @@ solution intermediate between a pure random key and a pure
 mathematical generator. However, be warned that the ultimate 
 crypto-security depends on how cleverness you can keep your key 
 secure from your enemy.
+
+
 Why is One Time Pad Perfectly Secure ?
+
 One-time pad encryption algorithm can be generalized using the 
 following equation:
 Ci=E (Pi, Ki) for I=1,2,3,…,n
@@ -239,7 +263,10 @@ several values of the key which produce the given ciphertext byte
 from the known plaintext byte. Similarly, the plaintext could be 
 encrypted in units other than 8-bit bytes. For present purposes, 
 however, encryption based on bytes is sufficiently general.
+
+
 How Is One Time Pad Implemented?
+
 Step 1: Input a string that is to be encrypted. For example the word 
 that has to be encrypted is "CRYPTOGRAPHY".
 Step 2: The length of the word to be encrypted is calculated and the 
@@ -260,9 +287,14 @@ F so that we encrypt the first level of encryption.
 WORD C R Y P T O G R A P H Y
 OTP D E U O K H R W X K O P
 ENC F V S D D V X N X Z V N
+
 • SECOND LEVEL ENCERPTION
+
 • DNA CRYPTOGRAPHY
+
+
 BACKGROUND
+
 DNA cryptography is a new born cryptographic field emerged with the research 
 of 
 DNA computing, in which DNA is used as information carrier and the modern 
@@ -283,7 +315,10 @@ establishing corresponding theories, discovering possible development directions
 searching for simple methods of realizing DNA cryptography, and laying the 
 basis for future development.
 
+
+
 WHAT IS DNA?
+
 DNA stands for Deoxyribonucleic acid which store genetic information of the 
 entire living organism ranging from human being to small viruses. It is also called 
 as an information carrier and consists of long polymer of small units called 
@@ -300,13 +335,16 @@ hydrogen bond with each other, whereas C and G forms bond with one another.
 In this structure of DNA both the strands are antiparallel to each other, means if 
 one strand starts from 3′ to 5′, then another strand is from 5′ to 3′.
 ADVANTAGE OF DNA CRYPTOGRAPHY
+
 Speed – Conventional computers can perform approximately 100 MIPS (millions 
 of instruction per second). Combining DNA strands as demonstrated by Adleman 
 made computations equivalent to 10^9 or better, arguably over 100 times faster 
 than the fastest computer.
+
 Minimal Storage Requirements – DNA stores memory at a density of about 1 
 bit per cubic nanometer, where conventional storage media requires 10^12 cubic 
 nanometers to store 1 bit.
+
 Minimal Power Requirements – There is no power required for DNA 
 computing while the computation is taking place. The chemical bonds that are the 
 building blocks of DNA happen without any outside power source. There is no 
@@ -315,10 +353,12 @@ Multiple DNA crypto algorithms have been researched and published, like the
 Symmetric and Asymmetric Key Crypto System using DNA, DNA 
 Steganography Systems, Triple Stage DNA Cryptography, Encryption algorithms 
 inspired by DNA, and Chaotic computing.
+
 DNA Cryptography can be defined as a technique of hiding data in terms of DNA 
 sequence. In the cryptographic technique, each letter of the alphabet is converted 
 into a different combination of the four bases which make up the human 
 deoxyribonucleic acid (DNA).
+
 DNA cryptography is a rapid emerging technology which works on concepts of 
 DNA computing. DNA stores a massive amount of information inside the tiny 
 nuclei of living cells. It encodes all the instructions needed to make every living 
@@ -329,6 +369,7 @@ current manipulation techniques can handle to the order of 1020 strands of DNA.
 DNA, with its unique data structure and ability to perform many parallel 
 operations, allows one to look at a computational problem from a different point 
 of view.
+
 A simple mechanism of transmitting two related messages by hiding the message 
 is not enough to prevent an attacker from breaking the code. DNA Cryptography 
 can have special advantage for secure data storage, authentication, digital 
@@ -341,15 +382,21 @@ decrypting data that is stored as a DNA. With the right kind of setup, it has th
 potential to solve huge mathematical problems. It’s hardly surprising then, that 
 DNA computing represents a serious threat to various powerful encryption 
 schemes.
+
 Various groups have suggested using the sequence of nucleotides in DNA (A for 
 00, C for 01, G for 10, T for 11) for just this purpose. One idea is to not even 
 bother encrypting the information but simply burying it in the DNA so it is well 
 hidden, a technique called DNA steganography. DNA Storage of Data has a wide 
 range of capacity:
+
 • Medium of Ultra-compact Information storage: Very large amounts of data 
 that can be stored in compact volume
+
 • A gram of DNA contains 1021 DNA bases = 108 Terabytes of data.
+
 • A few grams of DNA may hold all data stored in the world.
+
+
 HOW TO IMPLEMENT DNA CRYPTOGRAPHY
 Step 6: One we get a string after the first level of encryption we therefore apply 
 another level to the resulted string obtained after applying OTP method.
